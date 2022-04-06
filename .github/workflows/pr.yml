@@ -7,4 +7,6 @@ jobs:
     runs-on: macos-11
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3  
+        uses: actions/checkout@v3
+      - name: Build source code 
+        run: xcodebuild -project GHApp.xcodeproj -scheme GHApp_iOS build  
