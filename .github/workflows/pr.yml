@@ -1,0 +1,10 @@
+name: CI
+on:
+  pull_request:
+     types: [opened, synchronize, reopened]
+jobs:
+  Run:
+    runs-on: macos-11
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3  
